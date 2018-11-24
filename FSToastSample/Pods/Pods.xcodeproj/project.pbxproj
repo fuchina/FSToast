@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		806CF3CE9986CD63F791C8D7098FA60F /* Pods-FSToastSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AADACB3254DF6D83288D1C58370068B /* Pods-FSToastSample-dummy.m */; };
+		D5B4014D68C13D8DC320A24B62ADE671 /* FSToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 993C340E340E45E8DCB002C0F7E1C452 /* FSToast-dummy.m */; };
+		DF61380FF54B64542D23725603989CD7 /* FSToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D44AFAEE88AE823AA3DF7B9D958BA92 /* FSToast.m */; };
+		F431D5486D2C551D1E9EC129A55B3381 /* FSToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 74A9707780A4B178758A3D85278FEB27 /* FSToast.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77B40EBE30486B3A9786C4E9468B428A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D80E7D3BB5D700C44F1E2C39E9034CB;
+			remoteInfo = FSToast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		197E0483B164C693FD6A507A868E2B14 /* FSToast.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FSToast.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1E8D7A7D4C91718BCB49741ECB93CE4C /* Pods-FSToastSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FSToastSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		24C0EC859612AFDED5277F6BEDB15444 /* libFSToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFSToast.a; path = libFSToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		57609B5D083B4E3EF33A713A0248165C /* FSToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSToast-prefix.pch"; sourceTree = "<group>"; };
+		5BC9C6A738E57A230651DBB1FFCE9131 /* Pods-FSToastSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FSToastSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5D44AFAEE88AE823AA3DF7B9D958BA92 /* FSToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSToast.m; path = FSToast/Classes/FSToast.m; sourceTree = "<group>"; };
+		739459835C2213295EDC23F390508B87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		74A9707780A4B178758A3D85278FEB27 /* FSToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSToast.h; path = FSToast/Classes/FSToast.h; sourceTree = "<group>"; };
+		8AADACB3254DF6D83288D1C58370068B /* Pods-FSToastSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FSToastSample-dummy.m"; sourceTree = "<group>"; };
+		993C340E340E45E8DCB002C0F7E1C452 /* FSToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSToast-dummy.m"; sourceTree = "<group>"; };
+		AB33FE80F42FD53BC72A2B0EFA87A1F8 /* Pods-FSToastSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSToastSample.release.xcconfig"; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DB952712BB88C24DCB87CCD10C7409AC /* FSToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSToast.xcconfig; sourceTree = "<group>"; };
+		DEEC1FA15C8463A4D7548CACEB1F9276 /* libPods-FSToastSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FSToastSample.a"; path = "libPods-FSToastSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9646384180B3B487ED1DD163948FC3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F59729E32DED547F06AEFC7E6760C44F /* Pods-FSToastSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSToastSample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3EBFC6305EDD56D11661873A61678F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E626E4ED1710F93C004122E57A9180C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06378EBA80BA2B9D07A1E898D00DEA5F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				197E0483B164C693FD6A507A868E2B14 /* FSToast.podspec */,
+				739459835C2213295EDC23F390508B87 /* LICENSE */,
+				EA9646384180B3B487ED1DD163948FC3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D5BF1F64976D31AF6F48C90EF375BFB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB952712BB88C24DCB87CCD10C7409AC /* FSToast.xcconfig */,
+				993C340E340E45E8DCB002C0F7E1C452 /* FSToast-dummy.m */,
+				57609B5D083B4E3EF33A713A0248165C /* FSToast-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "FSToastSample/Pods/Target Support Files/FSToast";
+			sourceTree = "<group>";
+		};
+		43AE1D7E4EA883E8FC85F651A73339A1 /* FSToast */ = {
+			isa = PBXGroup;
+			children = (
+				74A9707780A4B178758A3D85278FEB27 /* FSToast.h */,
+				5D44AFAEE88AE823AA3DF7B9D958BA92 /* FSToast.m */,
+				06378EBA80BA2B9D07A1E898D00DEA5F /* Pod */,
+				1D5BF1F64976D31AF6F48C90EF375BFB /* Support Files */,
+			);
+			name = FSToast;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4819D0D459416762F9C7B2FD68613F72 /* Pods-FSToastSample */ = {
+			isa = PBXGroup;
+			children = (
+				5BC9C6A738E57A230651DBB1FFCE9131 /* Pods-FSToastSample-acknowledgements.markdown */,
+				1E8D7A7D4C91718BCB49741ECB93CE4C /* Pods-FSToastSample-acknowledgements.plist */,
+				8AADACB3254DF6D83288D1C58370068B /* Pods-FSToastSample-dummy.m */,
+				F59729E32DED547F06AEFC7E6760C44F /* Pods-FSToastSample.debug.xcconfig */,
+				AB33FE80F42FD53BC72A2B0EFA87A1F8 /* Pods-FSToastSample.release.xcconfig */,
+			);
+			name = "Pods-FSToastSample";
+			path = "Target Support Files/Pods-FSToastSample";
+			sourceTree = "<group>";
+		};
+		5C0A53ABCD98327D197853018251094B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4819D0D459416762F9C7B2FD68613F72 /* Pods-FSToastSample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				CBDBEB020A9EA681A723E199EA95A140 /* Development Pods */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				D3E9C308940ADF92AD63C336188535B1 /* Products */,
+				5C0A53ABCD98327D197853018251094B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CBDBEB020A9EA681A723E199EA95A140 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43AE1D7E4EA883E8FC85F651A73339A1 /* FSToast */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D3E9C308940ADF92AD63C336188535B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24C0EC859612AFDED5277F6BEDB15444 /* libFSToast.a */,
+				DEEC1FA15C8463A4D7548CACEB1F9276 /* libPods-FSToastSample.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01AE72AB0BDAC67377B656C2CFC7BCE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F431D5486D2C551D1E9EC129A55B3381 /* FSToast.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C47749753A5D145B8A338A902C71CCD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C2C290F464F7CC1BCBFDC93B0A0A221 /* Pods-FSToastSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC14B5BE7B935F310DA9E4E89D10DF83 /* Build configuration list for PBXNativeTarget "Pods-FSToastSample" */;
+			buildPhases = (
+				C47749753A5D145B8A338A902C71CCD8 /* Headers */,
+				B0E02DF6C3B7281D3E8BD60CE7ED3C0E /* Sources */,
+				E626E4ED1710F93C004122E57A9180C8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEDD5E6127DBCB5D84B9F5F3EF3A0355 /* PBXTargetDependency */,
+			);
+			name = "Pods-FSToastSample";
+			productName = "Pods-FSToastSample";
+			productReference = DEEC1FA15C8463A4D7548CACEB1F9276 /* libPods-FSToastSample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5D80E7D3BB5D700C44F1E2C39E9034CB /* FSToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED67CA29AA8C71C31EFF8E96A926C9FC /* Build configuration list for PBXNativeTarget "FSToast" */;
+			buildPhases = (
+				01AE72AB0BDAC67377B656C2CFC7BCE5 /* Headers */,
+				EC9847550E038A30A6B93190D88BE496 /* Sources */,
+				A3EBFC6305EDD56D11661873A61678F5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSToast;
+			productName = FSToast;
+			productReference = 24C0EC859612AFDED5277F6BEDB15444 /* libFSToast.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D3E9C308940ADF92AD63C336188535B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D80E7D3BB5D700C44F1E2C39E9034CB /* FSToast */,
+				2C2C290F464F7CC1BCBFDC93B0A0A221 /* Pods-FSToastSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0E02DF6C3B7281D3E8BD60CE7ED3C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806CF3CE9986CD63F791C8D7098FA60F /* Pods-FSToastSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC9847550E038A30A6B93190D88BE496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B4014D68C13D8DC320A24B62ADE671 /* FSToast-dummy.m in Sources */,
+				DF61380FF54B64542D23725603989CD7 /* FSToast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEDD5E6127DBCB5D84B9F5F3EF3A0355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSToast;
+			target = 5D80E7D3BB5D700C44F1E2C39E9034CB /* FSToast */;
+			targetProxy = 77B40EBE30486B3A9786C4E9468B428A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		490EA3237C6255EA17AA35D3CE13548C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59729E32DED547F06AEFC7E6760C44F /* Pods-FSToastSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80F45924FBB1FB10E5A4A325B90FFAF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB952712BB88C24DCB87CCD10C7409AC /* FSToast.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FSToast/FSToast-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FSToast;
+				PRODUCT_NAME = FSToast;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE01AF5D395AE305A54D518A9B774D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CF27050A4F34E8D8F3E71E39D81A5328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB952712BB88C24DCB87CCD10C7409AC /* FSToast.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FSToast/FSToast-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FSToast;
+				PRODUCT_NAME = FSToast;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F53D8A4867566F100F69BA829C80713C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB33FE80F42FD53BC72A2B0EFA87A1F8 /* Pods-FSToastSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */,
+				BE01AF5D395AE305A54D518A9B774D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC14B5BE7B935F310DA9E4E89D10DF83 /* Build configuration list for PBXNativeTarget "Pods-FSToastSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490EA3237C6255EA17AA35D3CE13548C /* Debug */,
+				F53D8A4867566F100F69BA829C80713C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED67CA29AA8C71C31EFF8E96A926C9FC /* Build configuration list for PBXNativeTarget "FSToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF27050A4F34E8D8F3E71E39D81A5328 /* Debug */,
+				80F45924FBB1FB10E5A4A325B90FFAF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - FSToast (0.0.1)
+
+DEPENDENCIES:
+  - FSToast (from `../`)
+
+EXTERNAL SOURCES:
+  FSToast:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FSToast: c168e006b160e4305f6bf828da66cdffcc20dbe7
+
+PODFILE CHECKSUM: 37bb2d5135cbfae786344743a7ef081c93f49a18
+
+COCOAPODS: 1.6.0.beta.2
