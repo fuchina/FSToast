@@ -1,5 +1,5 @@
 PODS:
-  - FSToast (0.0.1)
+  - FSToast (0.0.2)
 
 DEPENDENCIES:
   - FSToast (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FSToast: c168e006b160e4305f6bf828da66cdffcc20dbe7
+  FSToast: dde2e0052db2b1a496a75a66bc5330cc5e9e1432
 
 PODFILE CHECKSUM: 37bb2d5135cbfae786344743a7ef081c93f49a18
 

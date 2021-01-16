@@ -13,12 +13,48 @@ static char _kAssociateToastTapKey;
 
 @implementation FSToast
 
+BOOL _fs_FSToast_isIPhoneX (){
+    if (@available(iOS 11.0, *)) {
+        static dispatch_once_t onceToken;
+        static BOOL result = NO;
+        UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
+        if (window) {
+            dispatch_once(&onceToken, ^{
+                UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+                BOOL landscape = (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight);
+                if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+                    if (!landscape && window.safeAreaInsets.top > 0 && window.safeAreaInsets.bottom > 0) {
+                        result = YES;
+                    } else if (landscape && window.safeAreaInsets.left > 0 && window.safeAreaInsets.right > 0) {
+                        result = YES;
+                    } else {
+                        // nothing
+                    }
+                }
+            });
+        } else {
+            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+                CGSize size = [UIScreen mainScreen].bounds.size;
+                if (MAX(size.width, size.height) >= 812) {
+                    result = YES;
+                }
+            }
+        }
+        return result;
+    }
+    return NO;
+}
+
 + (void)toast:(NSString *)text{
     [self toast:text duration:2];
 }
 
 + (void)toast:(NSString *)text tap:(void (^)(void))tap{
-    [self toast:text duration:2 start:-64 move:0 end:-64 tap:tap];
+    CGFloat move = 0;
+    if (_fs_FSToast_isIPhoneX()) {
+        move = 25;
+    }
+    [self toast:text duration:2 start:-64 move:move end:-64 tap:tap];
 }
 
 + (void)toast:(NSString *)text duration:(CGFloat)duration{

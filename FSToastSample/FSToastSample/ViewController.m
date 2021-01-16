@@ -19,8 +19,12 @@
     [super viewDidLoad];
     
     [FSToast show:@"what"];
+    [FSToast toast:@"what"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)ddd{
+
+}
 
 @end
