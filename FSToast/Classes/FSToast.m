@@ -13,51 +13,16 @@ static char _kAssociateToastTapKey;
 
 @implementation FSToast
 
-BOOL _fs_FSToast_isIPhoneX (){
-    if (@available(iOS 11.0, *)) {
-        static dispatch_once_t onceToken;
-        static BOOL result = NO;
-        UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
-        if (window) {
-            dispatch_once(&onceToken, ^{
-                UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-                BOOL landscape = (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight);
-                if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-                    if (!landscape && window.safeAreaInsets.top > 0 && window.safeAreaInsets.bottom > 0) {
-                        result = YES;
-                    } else if (landscape && window.safeAreaInsets.left > 0 && window.safeAreaInsets.right > 0) {
-                        result = YES;
-                    } else {
-                        // nothing
-                    }
-                }
-            });
-        } else {
-            if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
-                CGSize size = [UIScreen mainScreen].bounds.size;
-                if (MAX(size.width, size.height) >= 812) {
-                    result = YES;
-                }
-            }
-        }
-        return result;
-    }
-    return NO;
-}
-
-+ (void)toast:(NSString *)text{
++ (void)toast:(NSString *)text {
     [self toast:text duration:2];
 }
 
-+ (void)toast:(NSString *)text tap:(void (^)(void))tap{
++ (void)toast:(NSString *)text tap:(void (^)(void))tap {
     CGFloat move = 0;
-    if (_fs_FSToast_isIPhoneX()) {
-        move = 25;
-    }
     [self toast:text duration:2 start:-64 move:move end:-64 tap:tap];
 }
 
-+ (void)toast:(NSString *)text duration:(CGFloat)duration{
++ (void)toast:(NSString *)text duration:(CGFloat)duration {
     [self toast:text tap:nil];
 }
 
@@ -111,16 +76,16 @@ BOOL _fs_FSToast_isIPhoneX (){
     }
 }
 
-+ (void)show:(NSString *)text{
++ (void)show:(NSString *)text {
     [self show:text duration:2];
 }
 
-+ (void)show:(NSString *)text duration:(CGFloat)duration{
++ (void)show:(NSString *)text duration:(CGFloat)duration {
     CGSize size = [UIScreen mainScreen].bounds.size;
     [self show:text duration:duration viewTop:(size.height - 40) / 2];
 }
 
-+ (void)show:(NSString *)text duration:(CGFloat)duration viewTop:(CGFloat)y{
++ (void)show:(NSString *)text duration:(CGFloat)duration viewTop:(CGFloat)y {
     if ([text isKindOfClass:NSString.class] && text.length) {
         CGSize size = [UIScreen mainScreen].bounds.size;
         UILabel *label = [self label];
@@ -148,7 +113,7 @@ BOOL _fs_FSToast_isIPhoneX (){
     }
 }
 
-+ (void)showImageWithType:(CSPToastImageType)type text:(NSString *)text{
++ (void)showImageWithType:(CSPToastImageType)type text:(NSString *)text {
     UIImage *image = nil;
     switch (type) {
         case CSPToastImageTypeGreenHeart:{
@@ -163,7 +128,7 @@ BOOL _fs_FSToast_isIPhoneX (){
     [self showImage:image text:text viewTop:(size.height - 40) / 2];
 }
 
-+ (void)showImage:(UIImage *)image text:(NSString *)text viewTop:(CGFloat)top{
++ (void)showImage:(UIImage *)image text:(NSString *)text viewTop:(CGFloat)top {
     if ([text isKindOfClass:NSString.class] && text.length) {
         CGSize size = [UIScreen mainScreen].bounds.size;
         UILabel *label = [self label];
@@ -200,7 +165,7 @@ BOOL _fs_FSToast_isIPhoneX (){
     }
 }
 
-+ (void)showCustomView:(UIView *)view duration:(CGFloat)duration{
++ (void)showCustomView:(UIView *)view duration:(CGFloat)duration {
     if ([view isKindOfClass:UIView.class]) {
         dispatch_async(dispatch_get_main_queue(), ^{
 //            UIDevice *device = [UIDevice currentDevice];
@@ -229,7 +194,7 @@ BOOL _fs_FSToast_isIPhoneX (){
     }
 }
 
-+ (void)toastCustomView:(UIView *)view duration:(CGFloat)duration start:(CGFloat)start move:(CGFloat)move end:(CGFloat)end{
++ (void)toastCustomView:(UIView *)view duration:(CGFloat)duration start:(CGFloat)start move:(CGFloat)move end:(CGFloat)end {
     if ([view isKindOfClass:UIView.class]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSArray *windows = [UIApplication sharedApplication].windows;
@@ -258,7 +223,7 @@ BOOL _fs_FSToast_isIPhoneX (){
     }
 }
 
-+ (UIView *)baseView{
++ (UIView *)baseView {
     static UIColor *backColor = nil;
     if (!backColor) {
         backColor = [UIColor colorWithRed:73 / 255.0 green:80 / 255.0 blue:86 / 255.0 alpha:.9];
@@ -269,7 +234,7 @@ BOOL _fs_FSToast_isIPhoneX (){
     return view;
 }
 
-+ (UILabel *)label{
++ (UILabel *)label {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 8, 0, 24)];
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
@@ -278,7 +243,7 @@ BOOL _fs_FSToast_isIPhoneX (){
     return label;
 }
 
-+ (CGFloat)textHeight:(NSString *)text fontInt:(NSInteger)fontInt labelWidth:(CGFloat)labelWidth{
++ (CGFloat)textHeight:(NSString *)text fontInt:(NSInteger)fontInt labelWidth:(CGFloat)labelWidth {
     if(text){
         NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:text];
         NSRange allRange = [text rangeOfString:text];
