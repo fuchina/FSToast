@@ -19,6 +19,12 @@ static char _kAssociateToastTapKey;
 
 + (void)toast:(NSString *)text tap:(void (^)(void))tap {
     CGFloat move = 0;
+    if (@available(iOS 11.0, *)) {
+        CGFloat top = UIApplication.sharedApplication.delegate.window.safeAreaInsets.top;
+        if (top > 0) {
+            move = 25;
+        }
+    }
     [self toast:text duration:2 start:-64 move:move end:-64 tap:tap];
 }
 
