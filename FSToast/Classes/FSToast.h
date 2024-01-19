@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, CSPToastImageType) {
 //  纯文字提示
 + (void)show:(NSString *)text;
 + (void)show:(NSString *)text duration:(CGFloat)duration;
++ (void)show:(NSString *)text duration:(CGFloat)duration inView:(UIView *)superView;
 
 // 从手机顶部弹出
 + (void)toast:(NSString *)text;

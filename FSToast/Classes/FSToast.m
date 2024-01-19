@@ -91,7 +91,16 @@ static char _kAssociateToastTapKey;
     [self show:text duration:duration viewTop:(size.height - 40) / 2];
 }
 
++ (void)show:(NSString *)text duration:(CGFloat)duration inView:(UIView *)superView {
+    CGSize size = [UIScreen mainScreen].bounds.size;
+    [self show:text duration:duration viewTop:(size.height - 40) / 2 inView:superView];
+}
+
 + (void)show:(NSString *)text duration:(CGFloat)duration viewTop:(CGFloat)y {
+    [self show:text duration:duration viewTop:y inView:nil];
+}
+
++ (void)show:(NSString *)text duration:(CGFloat)duration viewTop:(CGFloat)y inView:(UIView *)superView {
     if ([text isKindOfClass:NSString.class] && text.length) {
         CGSize size = [UIScreen mainScreen].bounds.size;
         UILabel *label = [self label];
@@ -115,7 +124,11 @@ static char _kAssociateToastTapKey;
         view.frame = CGRectMake((size.width - viewWidth) / 2, y, viewWidth, labelHeight + 20);
         [view addSubview:label];
         
-        [self showCustomView:view duration:duration];
+        if (superView) {
+            [self showCustomView:view inView:superView duration:duration];
+        } else {
+            [self showCustomView:view duration:duration];
+        }
     }
 }
 
@@ -189,7 +202,15 @@ static char _kAssociateToastTapKey;
                     break;
                 }
             }
-            [w addSubview:view];
+            [self showCustomView:view inView:w duration:duration];
+        });
+    }
+}
+
++ (void)showCustomView:(UIView *)view inView:(UIView *)superView duration:(CGFloat)duration {
+    if ([view isKindOfClass:UIView.class]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [superView addSubview:view];
             
             [UIView animateWithDuration:0.3 delay:duration options:UIViewAnimationOptionCurveEaseInOut animations:^{
                 view.alpha = 0;
