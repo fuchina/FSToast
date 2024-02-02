@@ -16,9 +16,9 @@ typedef NS_ENUM(NSInteger, CSPToastImageType) {
 @interface FSToast : NSObject
 
 //  纯文字提示
-+ (void)show:(NSString *)text;
-+ (void)show:(NSString *)text duration:(CGFloat)duration;
-+ (void)show:(NSString *)text duration:(CGFloat)duration inView:(UIView *)superView;
++ (UIView *)show:(NSString *)text;
++ (UIView *)show:(NSString *)text duration:(CGFloat)duration;
++ (UIView *)show:(NSString *)text duration:(CGFloat)duration inView:(UIView *)superView;
 
 // 从手机顶部弹出
 + (void)toast:(NSString *)text;

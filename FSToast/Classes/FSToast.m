@@ -82,25 +82,25 @@ static char _kAssociateToastTapKey;
     }
 }
 
-+ (void)show:(NSString *)text {
-    [self show:text duration:2];
++ (UIView *)show:(NSString *)text {
+    return [self show:text duration:2];
 }
 
-+ (void)show:(NSString *)text duration:(CGFloat)duration {
++ (UIView *)show:(NSString *)text duration:(CGFloat)duration {
     CGSize size = [UIScreen mainScreen].bounds.size;
-    [self show:text duration:duration viewTop:(size.height - 40) / 2];
+    return [self show:text duration:duration viewTop:(size.height - 40) / 2];
 }
 
-+ (void)show:(NSString *)text duration:(CGFloat)duration inView:(UIView *)superView {
++ (UIView *)show:(NSString *)text duration:(CGFloat)duration inView:(UIView *)superView {
     CGSize size = [UIScreen mainScreen].bounds.size;
-    [self show:text duration:duration viewTop:(size.height - 40) / 2 inView:superView];
+    return [self show:text duration:duration viewTop:(size.height - 40) / 2 inView:superView];
 }
 
-+ (void)show:(NSString *)text duration:(CGFloat)duration viewTop:(CGFloat)y {
-    [self show:text duration:duration viewTop:y inView:nil];
++ (UIView *)show:(NSString *)text duration:(CGFloat)duration viewTop:(CGFloat)y {
+    return [self show:text duration:duration viewTop:y inView:nil];
 }
 
-+ (void)show:(NSString *)text duration:(CGFloat)duration viewTop:(CGFloat)y inView:(UIView *)superView {
++ (UIView *)show:(NSString *)text duration:(CGFloat)duration viewTop:(CGFloat)y inView:(UIView *)superView {
     if ([text isKindOfClass:NSString.class] && text.length) {
         CGSize size = [UIScreen mainScreen].bounds.size;
         UILabel *label = [self label];
@@ -129,7 +129,10 @@ static char _kAssociateToastTapKey;
         } else {
             [self showCustomView:view duration:duration];
         }
+        
+        return view;
     }
+    return nil;
 }
 
 + (void)showImageWithType:(CSPToastImageType)type text:(NSString *)text {
