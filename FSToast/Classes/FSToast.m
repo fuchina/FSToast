@@ -197,7 +197,10 @@ static char _kAssociateToastTapKey;
 //                [w addSubview:view];
 //            }else{
 //            }
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
             NSArray *windows = [UIApplication sharedApplication].windows;
+#pragma clang diagnostic pop
             UIWindow *w = nil;
             for (int x = (int)windows.count - 1; x >= 0; x --) {
                 w = windows[x];
@@ -227,7 +230,10 @@ static char _kAssociateToastTapKey;
 + (void)toastCustomView:(UIView *)view duration:(CGFloat)duration start:(CGFloat)start move:(CGFloat)move end:(CGFloat)end {
     if ([view isKindOfClass:UIView.class]) {
         dispatch_async(dispatch_get_main_queue(), ^{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
             NSArray *windows = [UIApplication sharedApplication].windows;
+#pragma clang diagnostic pop
             UIWindow *w = nil;
             for (int x = (int)windows.count - 1; x >= 0; x --) {
                 w = windows[x];
