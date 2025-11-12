@@ -7,6 +7,7 @@
 //
 
 #import "FSToast.h"
+#import "FSKit.h"
 #import <objc/runtime.h>
 
 static char _kAssociateToastTapKey;
@@ -20,7 +21,8 @@ static char _kAssociateToastTapKey;
 + (void)toast:(NSString *)text tap:(void (^)(void))tap {
     CGFloat move = 0;
     if (@available(iOS 11.0, *)) {
-        CGFloat top = UIApplication.sharedApplication.delegate.window.safeAreaInsets.top;
+        UIWindowScene *ws = FSKit.currentWindowScene;
+        CGFloat top = ws.keyWindow.safeAreaInsets.top;
         if (top > 0) {
             move = 25;
         }
